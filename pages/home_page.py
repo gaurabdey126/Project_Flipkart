@@ -6,5 +6,16 @@ class HomePage:
         self.driver = driver
 
     search_field = (By.XPATH, "//input[@type='text']")
-    def getsearchfield(self):
+    search_icon = (By.XPATH, "//button[@class='L0Z3Pu']")
+
+
+
+
+
+
+    def getsearch_field(self):
         return self.driver.find_element(*HomePage.search_field)
+
+
+    def getsearch_icon(self):
+        return self.driver.find_element(*HomePage.search_icon)

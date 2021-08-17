@@ -18,6 +18,7 @@ def setup(request):
     driver.implicitly_wait(10)
     driver.get("https://www.flipkart.com/")
     request.cls.driver = driver
-    #
-    # yield
-    # driver.close()
+
+
+    yield
+    driver.quit()
